@@ -56,14 +56,14 @@
 
   /* solid */
 
-  --jet: hsl(51, 57%, 45%);
-  --onyx: hsl(0, 68%, 38%);
-  --eerie-black-1: hsl(0, 68%, 38%);
+  --jet: hsl(0, 83%, 50%);
+  --onyx: hsl(0, 83%, 50%);
+  --eerie-black-1: hsl(0, 83%, 50%);
   --eerie-black-2: hsl(240, 48%, 53%);
   --smoky-black: hsl(0, 5%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
+  --orange-yellow-crayola: hsl(60, 100%, 72%);
   --vegas-gold: hsl(45, 54%, 58%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
