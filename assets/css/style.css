@@ -59,13 +59,13 @@
   --jet: hsl(0, 83%, 50%);
   --onyx: hsl(0, 83%, 50%);
   --eerie-black-1: hsl(0, 83%, 50%);
-  --eerie-black-2: hsl(240, 48%, 53%);
+  --eerie-black-2: hsl(265, 75%, 68%);
   --smoky-black: hsl(0, 5%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola: hsl(60, 100%, 72%);
   --vegas-gold: hsl(45, 54%, 58%);
-  --light-gray: hsl(0, 0%, 84%);
+  --light-gray: hsl(0, 0%, 100%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
 
@@ -168,8 +168,8 @@ body { background: var(--smoky-black); }
 .sidebar,
 article {
   background: var(--eerie-black-2);
-  border: 1px solid var(--jet);
-  border-radius: 20px;
+  border: 2px solid var(--jet);
+  border-radius: 30px;
   padding: 15px;
   box-shadow: var(--shadow-1);
   z-index: 1;
@@ -275,7 +275,7 @@ article.active {
 .content-card {
   position: relative;
   background: var(--border-gradient-onyx);
-  padding: 15px;
+  padding: 5px;
   padding-top: 45px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
@@ -433,13 +433,13 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
   padding-bottom: 4px;
   padding-left: 7px;
 }
 
 .social-item .social-link {
-  color: var(--light-gray-70);
+  color: var(--white-70);
   font-size: 18px;
 }
 
@@ -732,7 +732,7 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 15px;
+  gap: 45px;
   margin: 0 -15px;
   padding: 25px;
   padding-bottom: 25px;
@@ -749,8 +749,8 @@ main {
 }
 
 .clients-item img {
-  width: 100%;
-  filter: grayscale(1);
+  width: 115%;
+  /* filter: grayscale(1); */
   transition: var(--transition-1);
 }
 
