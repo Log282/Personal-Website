@@ -1162,7 +1162,7 @@ main {
   outline: none;
 }
 
-.form-input::placeholder { font-weight: var(--fw-500); }
+.form-input::placeholder { font-weight: var(--fw-500); color: black;}
 
 .form-input:focus { border-color: var(--orange-yellow-crayola); }
 
