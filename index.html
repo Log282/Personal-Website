@@ -1152,6 +1152,7 @@ based in the US.
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/detect-location.js"></script>
 
   <!--
     - ionicon link
@@ -1162,13 +1163,40 @@ based in the US.
   <!-- contact-form JavaScript -->
 
   <script src="https://smtpjs.com/v3/smtp.js"> </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"> </script>
+
+  <script type="text/javascript">
+    (
+      function(){
+        emailjs.init("OUuDh_UvpEkAOE_xx")
+      }
+    )();
+  </script>
+
   <script>
+      function sendMessage(){
+        let email  = document.getElementById("email").value;
+        let message = document.getElementById("message").value
+        emailjs.send(
+          "service_wrekk0d",
+          "template_rxvmoli",
+          {
+            to_name:"Logesh V",
+            from_name:email,
+            message:message
+          }).then((res)=>{
+            alert("Message sent");
+          },(error)=>{
+            alert("Error");
+          })
+      }
+  </script>
+
+  <!-- <script>
       function sendMessage()
       {
         Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "logeshvenkatesan23@gmail.com",
-        Password : "56CE7376CF4BE13219C2EC9A594EA53EB425",
+        SecureToken : "a1a2801c-110b-46a4-8ccd-5c5f2c7214f1",
         To : 'logeshvenkatesan23@gmail.com',
         From : document.getElementById("email").value,
         Subject : "New Contact Form",
@@ -1179,7 +1207,7 @@ based in the US.
       message => alert("Message Sent Successfully")
       );
       }
-  </script>
+  </script> -->
 
 </body>
 
